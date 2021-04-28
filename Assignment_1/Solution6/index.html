@@ -4,10 +4,12 @@
     <style>
       body {
         background-image: url("img.jpg");
-        color: cyan;
+        background-repeat: repeat-x;
+        color: navy;
       }
       div {
         background-image: url("img2.jpg");
+        background-repeat: repeat-y;
       }
       a {
         font-size: 20 rem;
@@ -22,19 +24,26 @@
         color: tomato;
       }
       a:hover {
-        color: white;
+        color: black;
+      }
+      layer {
+        position: relative;
+        z-index: 1000;
+        background: gray;
+        height: 200px;
+        width: 300px;
       }
     </style>
   </head>
   <body>
-    <div style="text-align: center;">
+    <div style="text-align: center">
       <h1>Solution 6</h1>
-      <code style="font-weight: 700;">
-          Amrit Pandey, 207907 <br>
-          MCA II SEM
+      <code style="font-weight: 700">
+        Amrit Pandey, 207907 <br />
+        MCA II SEM
       </code>
-      <hr>
-  </div>
+      <hr />
+    </div>
     <div>
       <h1>I haven't thought of it immediately.</h1>
       <h1>I haven't thought of it immediately.</h1>
@@ -43,6 +52,18 @@
       <h1>I haven't thought of it immediately.</h1>
       <h1>I haven't thought of it immediately.</h1>
     </div>
-    <a href="https://godbolt.org/"><h2>LINK1</h2></a>
+    <a href="https://google.com/"
+      ><h2 style="text-align: center">Hello World.</h2></a
+    >
+    <layer
+      id="layer2"
+      top="350"
+      bgcolor="blue"
+    >
+      <p>layer 2</p>
+    </layer>
+    <layer id="layer3" top="200" left="-200">
+      <p>layer 3</p>
+    </layer>
   </body>
 </html>
