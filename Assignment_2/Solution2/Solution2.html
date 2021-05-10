@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Solution 2</title>
+    <style>
+      input {
+        margin-top: 0.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Solution 2</h1>
+      <code style="font-weight: 700">
+        Amrit Pandey, 207907 <br />
+        MCA II SEM
+      </code>
+      <hr />
+    </div>
+    <form id="userForm" name="userForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" /> <br />
+      <label for="password">Password</label>
+      <input type="text" id="password" name="password" /> <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <script type="text/javascript">
+      const userName = "okape";
+      const password = "99778";
+      var form = document.getElementById("userForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var userData = e.target;
+        var inputUserName = userData[0].value;
+        var inputPassword = userData[1].value;
+        if (inputUserName === "" || inputPassword === "") {
+          alert("Please fill both the fields.");
+        }
+        if (inputUserName === userName && inputPassword === password) {
+          alert("Welcome (" + userName + ")");
+        } else {
+          alert("Username or password is wrong, enter valid ones.");
+        }
+      });
+    </script>
+  </body>
+</html>

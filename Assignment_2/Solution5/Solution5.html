@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Solution 5</title>
+    <style>
+      body {
+        font-family: "Averia Serif Libre";
+        margin: auto;
+        margin-top: 10vh;
+        width: 700px;
+        height: 400px;
+      }
+      input {
+        border: 1px solid;
+      }
+      td > label {
+        margin-right: 10px;
+      }
+      table {
+        border-collapse: separate;
+        border-spacing: 0 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Solution 4</h1>
+      <code style="font-weight: 700">
+        Amrit Pandey, 207907 <br />
+        MCA II SEM
+      </code>
+      <hr />
+    </div>
+    <form action="https://sbmueller.github.io/nohello/">
+      <fieldset>
+        <legend>Your Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label>Name : </label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name here"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Email : </label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email here"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Your Review</legend>
+        <table>
+          <tr>
+            <td>
+              <label>How did you hear about us : </label>
+              <select id="gettoknow" name="gettoknow">
+                <option>Google</option>
+                <option>Newspapaer</option>
+                <option>Blog</option>
+                <option>Television</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Would you visit again ? </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" value="Yes" name="visit" /> Yes
+              <input type="radio" value="No" name="visit" /> No
+              <input type="radio" value="Maybe" name="visit" /> Maybe
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Comments:</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea rows="6" cols="35"> </textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" name="signup" id="signup" checked/>
+              <label>Sign me up for email updates</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" name="submit" id="submit" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

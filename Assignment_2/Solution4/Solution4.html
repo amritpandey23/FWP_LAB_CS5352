@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Solution 4</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Solution 4</h1>
+      <code style="font-weight: 700">
+        Amrit Pandey, 207907 <br />
+        MCA II SEM
+      </code>
+      <hr />
+    </div>
+    <br />
+    <form id="salaryForm" name="salaryForm">
+      <input
+        id="salary"
+        type="number"
+        name="salary"
+        placeholder="Enter Your Salary"
+      />
+      <input id="submit" type="submit" name="submit" value="submit" />
+    </form>
+    <br />
+    <h1 id="grossSalary"></h1>
+    <script type="text/javascript">
+      var form = document.getElementById("salaryForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var grossPlaceHolder = document.getElementById("grossSalary");
+        var basicSalary = parseInt(e.target[0].value);
+        var grossSalary = basicSalary;
+        if (basicSalary >= 1500) {
+          grossSalary += 500 + 0.98 * basicSalary;
+        } else {
+          grossSalary += 0.1 * basicSalary + 0.9 * basicSalary;
+        }
+        grossPlaceHolder.innerHTML = "Gross Salary : " + grossSalary;
+      });
+    </script>
+  </body>
+</html>
