@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 14</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 1140px;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid #444;
+            font-size: 24px;
+        }
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center">
+        <h1>Solution 14</h1>
+        <code style="font-weight: 700">
+          Amrit Pandey, 207907 <br />
+          MCA II SEM
+        </code>
+        <hr />
+      </div>
+    <script>
+        document.write(
+          "<table> <tr> <th>Number</th> <th>Square<sup>2</sup></th> <th>Cube<sup>3</sup></th> </tr>"
+        );
+        for (var n = 1; n <= 10; n++) {
+          document.write(
+            "<tr><td>" +
+              n +
+              "</td><td>" +
+              Math.pow(n, 2) +
+              "</td><td>" +
+              Math.pow(n, 3) +
+              "</td></tr>"
+          );
+        }
+        document.write("</table>");
+      </script>
+</body>
+</html>
