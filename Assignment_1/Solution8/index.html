@@ -5,6 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Solution 8</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .margin,
+      .border,
+      .padding,
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .margin {
+        width: 600px;
+        height: 600px;
+        background: lightblue;
+      }
+      .border {
+        width: 450px;
+        height: 450px;
+        background: lightyellow;
+      }
+      .padding {
+        width: 300px;
+        height: 300px;
+        background: lightpink;
+      }
+      .content {
+        width: 200px;
+        height: 200px;
+        background: #fefefe;
+      }
+    </style>
   </head>
   <body>
     <div style="text-align: center">
@@ -16,57 +49,17 @@
       <hr />
     </div>
     <br />
-    <center>
-      <table
-        border="0"
-        height="600"
-        width="600"
-        align="top"
-        bgcolor="lightblue"
-        style="margin-top: 10px"
-      >
-        <tr>
-          <td>
-            <table
-              border="0"
-              height="85%"
-              width="85%"
-              bgcolor="orange"
-              style="margin-left: 50px"
-            >
-              <h2 align="center">Margin</h2>
-              <tr>
-                <td>
-                  <table
-                    border="0"
-                    height="80%"
-                    width="80%"
-                    bgcolor="wheat"
-                    style="margin-left: 48px"
-                  >
-                    <h2 align="center">Border</h2>
-                    <tr>
-                      <td>
-                        <table
-                          border="0"
-                          height="70%"
-                          width="70%"
-                          bgcolor="lightgreen"
-                          style="margin-left: 50px"
-                        >
-                          <tr>
-                            <h2 align="center">Padding</h2>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </center>
+    <div class="margin">
+      Margin
+      <div class="border">
+        Border
+        <div class="padding">
+          Padding
+          <div class="content">
+            Content
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

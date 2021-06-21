@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Nav Bar For Desktop and Tablet-->
+    <nav id="desktop-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <!-- Nav Bar For Mobile -->
+    <nav id="mobile-nav">
+      <i class="fas fa-bars"></i>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#contact">contact</a></li>
+        <i class="fas fa-times"></i>
+      </ul>
+    </nav>
+    <!-- Sections -->
+    <article>
+      <!-- home -->
+      <section id="home">
+        <div class="header-section">
+          <h1>Welcome to the website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            vero incidunt nesciunt impedit, neque provident corporis vel
+            repellat aliquid totam!
+          </p>
+        </div>
+      </section>
+      <!-- about -->
+      <section id="about">
+        <h1>about</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          vero incidunt nesciunt impedit, neque provident corporis vel repellat
+          aliquid totam!
+        </p>
+      </section>
+      <!-- services -->
+      <section id="services">
+        <h1>services</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          vero incidunt nesciunt impedit, neque provident corporis vel repellat
+          aliquid totam!
+        </p>
+      </section>
+      <!-- contact -->
+      <section id="contact">
+        <h1>contact</h1>
+        <div class="container">
+            <form>
+                <ul>
+                    <li>
+                        <label for="name"><span>Name <span class="required-star">*</span></span></label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg"><span>Message</span></label>
+                        <textarea rows="4" cols="50"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit">
+                    </li>
+                </ul>
+            </form>
+        </div>
+      </section>
+    </article>
+    <script src="main.js"></script>
+  </body>
+</html>

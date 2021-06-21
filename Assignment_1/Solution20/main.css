@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+html body #desktop-nav {
+  background-color: #000;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body #desktop-nav ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+html body #desktop-nav ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+html body #mobile-nav {
+  display: none;
+}
+html body article h1,
+html body article p {
+  text-align: center;
+}
+html body article h1 {
+  font-size: 4em;
+  text-transform: capitalize;
+}
+html body article p {
+  font-size: 1.5em;
+  width: 80%;
+  margin-top: 10px;
+}
+html body article section {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body article #home {
+  background-image: url(headerimg.jpg);
+}
+
+#services {
+  color: #fefefe;
+  background-image: url(services.jpg);
+}
+
+#about {
+  background-image: url(about.jpg);
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  html body #desktop-nav ul {
+    width: 100%;
+  }
+  html body article h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 700px) {
+  html body #desktop-nav {
+    display: none;
+  }
+  html body #mobile-nav {
+    background-color: #000;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s linear;
+  }
+  html body #mobile-nav i {
+    font-size: 2em;
+    margin-left: 10px;
+    transition: all 0.3s linear;
+  }
+  html body #mobile-nav ul {
+    position: absolute;
+    top: 0px;
+    transform: translatex(-100vw);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s linear;
+  }
+  html body #mobile-nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  html body #mobile-nav ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+  }
+  html body article h1 {
+    font-size: 2em;
+  }
+  html body article p {
+    font-size: 1em;
+  }
+  html body article #contact {
+    background-position: top;
+  }
+}
+
+.header-section {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0),
+    rgb(223, 153, 48)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0.3em;
+}
+span {
+  font-weight: 700;
+  color: #102a43;
+  line-height: 35px;
+  line-height: 2.5rem;
+  font-size: 12px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+input[type="submit"] {
+  background: #fc4366;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 1.3em;
+}
+
+.container {
+  width: 460px;
+  margin: 5em auto;
+}
+form {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.required-star {
+  color: #fc4366;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 9px 20px;
+  border: 1px solid #e1e2eb;
+  background-color: #fff;
+  color: #102a43;
+  caret-color: #829ab1;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 29px;
+  line-height: 2rem;
+  box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+  border-radius: 3px;
+  line-height: 29px;
+  line-height: 2rem;
+}
+
+nav li a {
+  color: #fefefe;
+  font-weight: bold;
+}
